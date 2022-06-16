@@ -11,24 +11,30 @@
 
 ### OpenCV
 次のURLからOpenCVをダウンロードします。
+
 <https://sourceforge.net/projects/opencvlibrary/files/4.6.0/opencv-4.6.0-vc14_vc15.exe/download>
 
 自己解凍式のアーカイブなので、ダウンロードしたexeファイルを実行して展開します。
 
 ### POSIX Threads for Windows
 次のURLから`pthreads-w32-2-9-1-release.zip`をダウンロードします。
+
 <https://sourceforge.net/projects/pthreads4w/files/>
 
 ### python
 次のURLにアクセスします。
+
 <https://www.python.org/downloads/windows/>
+
 "StableReleases" と書かれた側の最新バージョン(一番上のバージョン)のうち
 "Windows installer"とかかれたexeファイルをダウンロードしてください。
 32bit版と64bit版がありますので、お使いの環境に合わせて選んでください。
 
 ## darknetのビルド
 次のURLにアクセスして`Code`と書かれたボタンをクリックし、`Download ZIP`を選択します。
+
 <https://github.com/AlexeyAB/darknet>
+
 ダウンロードしてきたzipファイルは適当な場所に展開しておいてください。
 
 gitが使える環境の方は次のコマンドを実行してソースコードをcloneしても構いません。
