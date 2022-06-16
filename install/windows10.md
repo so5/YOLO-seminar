@@ -63,9 +63,9 @@ ls -l ../darknet.exe
 事前にダウンロードしたOpenCVとpthreadのdllファイルをdarknet.exeと同じディレクトリにコピーするか
 それぞれ環境変数PATHに追加してください
 
-OpenCV: `\opencv\build\x64\vc15\bin\opencv_world460d.dll`
+OpenCV: `opencv\build\x64\vc15\bin\opencv_world460d.dll`
 
-pthread: `Pre-build.2\dll\x64\pthreadVC2.dll`
+pthread: `pthreads-w32-2-9-1-release\Pre-build.2\dll\x64\pthreadVC2.dll`
 
 ## labelImgのインストール
 次のコマンドを実行します
