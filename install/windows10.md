@@ -40,7 +40,7 @@
 gitが使える環境の方は次のコマンドを実行してソースコードをcloneしても構いません。
 ```
 git clone https://github.com/AlexeyAB/darknet.git
-
+```
 ソースディレクトリに移動してビルドします
 
 `-DCMAKE_PREFIX_PATH`の後には、opencvのアーカイブを展開して生成されたディレクトリ内の`build`
@@ -63,7 +63,7 @@ ls -l ../darknet.exe
 事前にダウンロードしたOpenCVとpthreadのdllファイルをdarknet.exeと同じディレクトリにコピーするか
 それぞれ環境変数PATHに追加してください
 
-OpenCV: ``
+OpenCV: `\opencv\build\x64\vc15\bin\opencv_world460d.dll`
 
 pthread: `Pre-build.2\dll\x64\pthreadVC2.dll`
 
