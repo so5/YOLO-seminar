@@ -17,7 +17,7 @@
 自己解凍式のアーカイブなので、ダウンロードしたexeファイルを実行して展開します。
 
 ### POSIX Threads for Windows
-次のURLから`pthreads-w32-2-9-1-release.zip`をダウンロードします。
+次のURLから`pthreads-w32-2-9-1-release.zip`をダウンロードし、展開してください。
 
 <https://sourceforge.net/projects/pthreads4w/files/>
 
@@ -30,10 +30,16 @@
 "Windows installer"とかかれたexeファイルをダウンロードしてください。
 32bit版と64bit版がありますので、お使いの環境に合わせて選んでください。
 
+インストーラを起動すると、次の画面が表示されるので、最下部の`Add Python 3.10 to PATH`にチェックを入れてから、`Install Now`をクリックしてください。
+
+![img](./img/pythonInstaller.png "pythonInstaller")
+
 ## darknetのビルド
 次のURLにアクセスして`Code`と書かれたボタンをクリックし、`Download ZIP`を選択します。
 
 <https://github.com/AlexeyAB/darknet>
+
+![img](./img/downloadDarknet.png "downloadDarknet")
 
 ダウンロードしてきたzipファイルは適当な場所に展開しておいてください。
 
@@ -41,10 +47,11 @@ gitが使える環境の方は次のコマンドを実行してソースコー�
 ```
 git clone https://github.com/AlexeyAB/darknet.git
 ```
-ソースディレクトリに移動してビルドします
 
-`-DCMAKE_PREFIX_PATH`の後には、opencvのアーカイブを展開して生成されたディレクトリ内の`build`
-ディレクトリのパスを指定してください。
+スタートメニューから、`Developper Command Prompt for VS・・・`と書かれた
+コマンドプロンプトを起動し、ソースディレクトリに移動してビルドします
+
+![img](./img/cmdprompt.png "cmdprompt")
 
 ```
 cd darknet
@@ -53,6 +60,10 @@ cd build_release
 cmake -DCMAKE_PREFIX_PATH=C:\Users\sogo\Desktop\opencv\build -DENABLE_CUDA=OFF ..
 cmake --build . --target install
 ```
+
+cmakeの引数-DCMAKE_PREFIX_PATH`の後には、opencvのアーカイブを展開して生成されたディレクトリ内の`build`
+ディレクトリのパスを指定してください。
+
 
 正常にビルドできたら、darknetディレクトリの直下に`darknet.exe`という実行ファイルが生成されているので確認しましょう。
 ```
