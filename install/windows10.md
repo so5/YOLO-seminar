@@ -32,7 +32,7 @@
 
 インストーラを起動すると、次の画面が表示されるので、最下部の`Add Python 3.10 to PATH`にチェックを入れてから、`Install Now`をクリックしてください。
 
-![img](./img/pythonInstaller.png "pythonInstaller")
+![img](./img/pyhthonInstaller.png "pythonInstaller")
 
 ## darknetのビルド
 次のURLにアクセスして`Code`と書かれたボタンをクリックし、`Download ZIP`を選択します。
