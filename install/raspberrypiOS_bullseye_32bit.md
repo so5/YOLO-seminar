@@ -1,7 +1,9 @@
+#ラズパイOS向けインストール手順(32bit, 64bit共通)
+
 ## ツール類のインストール
 まずcmake以外のツールをインストールします。
 ```
-apt update && apt install gcc g++ git libopencv-dev python3-pip
+apt update && apt install gcc g++ git libopencv-dev python3-pip cmake
 ```
 
 ## darknetのビルド
